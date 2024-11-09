@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Practica1</string>
+    <string-array name="snipper">
+        <item>Elige el momento del dia</item>
+        <item>Amanecer</item>
+        <item>Atardecer</item>
+        <item>Anochecer</item>
+    </string-array>
+    <string name="buttom_fondo">Presiona para cambiar color de fondo</string>
+    <string name="TextoSpinner">Bienvenido</string>
+    <string name="button_mensaje">Presiona para ver un mensaje</string>
+</resources>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Formulario</string>
+    <string name="button_name">Login</string>
+    <string name="hint">Introduce tu Correo</string>
+    <string-array name="spinner">
+        <item>coco</item>
+        <item>uvas</item>
+        <item>manzanas</item>
+    </string-array>
 </resources>

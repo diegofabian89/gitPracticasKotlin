@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.uax.inicial.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    //antes q nada anadir en el gradle la viewbinding enable true
     //recuerda crear un metodo privado con lateinit para inicializar
     //mas tarde el binding
     private lateinit var binding: ActivityMainBinding

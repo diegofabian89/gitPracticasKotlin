@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TextoSpinner"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <Spinner
+        android:id="@+id/snipper"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+
+        android:entries="@array/snipper"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/colorboton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:background="@drawable/shapedra"
+        android:text="@string/buttom_fondo"
+        android:textColorLink="#D72E2E"
+        app:icon="@drawable/shapedra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snipper"
+        app:layout_constraintVertical_bias="0.113" />
+
+
+    <Button
+        android:id="@+id/mensajeboton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapedra"
+        android:backgroundTint="#7BE27F"
+        android:text="@string/button_mensaje"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorboton" />
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="282dp"
+        android:layout_height="157dp"
+        android:text="."
+
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/mensajeboton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorboton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

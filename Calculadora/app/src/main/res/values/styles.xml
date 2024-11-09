@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EstiloBotones">
+        <item name="android:textSize">28sp</item> <!-- Tamaño del texto -->
+        <item name="android:textColor">#F6FAD7</item> <!-- Color del texto --><!-- Espaciado interno -->
+        <item name="android:textStyle">bold</item> <!-- Estilo de texto -->
+    </style>
+</resources>

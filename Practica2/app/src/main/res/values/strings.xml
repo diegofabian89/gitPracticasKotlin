@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Practica2</string>
+    <string name="btEnviar">Enviar</string>
+    <string name="checkbox">Click para Activar escritura</string>
+</resources>
