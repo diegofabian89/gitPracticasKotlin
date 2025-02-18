@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Consecionario</string>
+    <string name="hintcorreo">Introduce correo @</string>
+    <string name="hintpass">Introduce tu contrasena</string>
+    <string name="btacceder">Acceder</string>
+    <string name="radiouser">Usuario Registrado</string>
+    <string name="radioinvit">Usuario Invitado</string>
 </resources>

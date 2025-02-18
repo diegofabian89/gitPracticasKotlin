@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorFondo"
@@ -17,6 +18,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+
         android:id="@+id/titulo"
         android:layout_width="101dp"
         android:layout_height="21dp"
@@ -44,10 +46,11 @@
             android:background="@color/colorTextview"
             android:gravity="bottom|end"
             android:maxLines="7"
+            android:paddingRight="25dp"
             android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
             android:text=""
             android:textSize="30sp"
-            android:scrollbars="vertical"
             app:layout_constraintBottom_toTopOf="@+id/textresultado"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.333"
@@ -60,60 +63,71 @@
         android:layout_height="84dp"
         android:background="@color/colorTextview"
         android:gravity="bottom|end"
+        android:paddingRight="25dp"
         android:text="@string/valorIncial"
         android:textColor="@color/white"
         android:textSize="65sp"
-        app:layout_constraintBottom_toTopOf="@+id/contenedorbuttons" />
+        app:layout_constraintBottom_toTopOf="@+id/contenedorbuttons"
+        app:layout_constraintEnd_toEndOf="@+id/contenedorbuttons"
+        app:layout_constraintStart_toStartOf="@+id/contenedorbuttons" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/contenedorbuttons"
         android:layout_width="match_parent"
-        android:layout_height="530dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:background="@color/colorTextview"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
         android:theme="@style/EstiloBotones"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/resultbutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
+            android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:backgroundTint="@color/botonigual"
             android:text="="
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/tresbutton" />
+            app:layout_constraintEnd_toEndOf="@+id/tresbutton"
+            app:layout_constraintStart_toStartOf="@+id/tresbutton"
+            app:layout_constraintTop_toBottomOf="@+id/tresbutton" />
 
         <Button
             android:id="@+id/decimalbutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
+            android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:backgroundTint="@color/verdebuton"
             android:text="."
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/dosbutton"
-            app:layout_constraintStart_toStartOf="@+id/dosbutton" />
+            app:layout_constraintStart_toStartOf="@+id/dosbutton"
+            app:layout_constraintTop_toBottomOf="@+id/dosbutton" />
 
         <Button
             android:id="@+id/cerobutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
-            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:backgroundTint="@color/verdebuton"
             android:text="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/cbutton"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/unobutton"
+            app:layout_constraintTop_toBottomOf="@+id/unobutton" />
 
         <Button
             android:id="@+id/multiplibutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
-
             android:layout_marginTop="4dp"
             android:backgroundTint="@color/verdebuton"
             android:text="x"
@@ -124,76 +138,93 @@
 
         <Button
             android:id="@+id/seisbutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
             android:layout_marginTop="4dp"
             android:backgroundTint="@color/verdebuton"
             android:text="6"
+            app:layout_constraintEnd_toEndOf="@+id/cambiosignotbutton"
             app:layout_constraintStart_toStartOf="@+id/cambiosignotbutton"
             app:layout_constraintTop_toBottomOf="@+id/nuevebutton" />
 
         <Button
             android:id="@+id/cuatrobutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
-            android:layout_marginLeft="4dp"
+
             android:layout_marginTop="4dp"
             android:backgroundTint="@color/verdebuton"
             android:text="4"
             app:layout_constraintEnd_toEndOf="@+id/sietebutton"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sietebutton"
-            app:layout_constraintVertical_bias="0.277" />
+            app:layout_constraintStart_toStartOf="@+id/sietebutton"
+            app:layout_constraintTop_toBottomOf="@+id/sietebutton" />
 
         <Button
             android:id="@+id/divbutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
+
             android:layout_marginTop="4dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+
+
             android:backgroundTint="@color/verdebuton"
             android:text="÷"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline3"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/cambiosignotbutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
-            android:layout_marginStart="4dp"
+
             android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+
+
             android:backgroundTint="@color/verdebuton"
             android:text="+/-"
-            app:layout_constraintStart_toEndOf="@+id/acbutton"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toStartOf="@+id/divbutton"
+            app:layout_constraintStart_toEndOf="@+id/guidelineVertical"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling" />
 
         <Button
             android:id="@+id/acbutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
-            android:layout_marginStart="4dp"
+
             android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+
             android:backgroundTint="@color/amarilloboton"
             android:text="CE"
+            app:layout_constraintEnd_toStartOf="@+id/cambiosignotbutton"
             app:layout_constraintStart_toEndOf="@+id/cbutton"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/cbutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
-            android:layout_marginLeft="4dp"
+            android:layout_marginEnd="4dp"
+
             android:layout_marginTop="4dp"
+
+
             android:backgroundTint="@color/amarilloboton"
             android:text="C"
-            app:layout_constraintEnd_toStartOf="@+id/acbutton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/ochobutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
             android:layout_marginTop="4dp"
 
@@ -205,7 +236,7 @@
 
         <Button
             android:id="@+id/nuevebutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
             android:layout_marginTop="4dp"
             android:backgroundTint="@color/verdebuton"
@@ -217,7 +248,7 @@
 
         <Button
             android:id="@+id/tresbutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
             android:layout_marginTop="4dp"
             android:backgroundTint="@color/verdebuton"
@@ -228,7 +259,7 @@
 
         <Button
             android:id="@+id/cincobutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
             android:layout_marginTop="4dp"
             android:backgroundTint="@color/verdebuton"
@@ -239,44 +270,43 @@
 
         <Button
             android:id="@+id/restabutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginRight="4dp"
+            android:layout_marginTop="5dp"
             android:backgroundTint="@color/verdebuton"
             android:text="-"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/divbutton"
+            app:layout_constraintStart_toStartOf="@+id/divbutton"
             app:layout_constraintTop_toBottomOf="@+id/multiplibutton" />
 
         <Button
             android:id="@+id/unobutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
-            android:layout_marginLeft="4dp"
+
             android:layout_marginTop="4dp"
             android:backgroundTint="@color/verdebuton"
             android:text="1"
             app:layout_constraintEnd_toEndOf="@+id/cbutton"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cuatrobutton"
             app:layout_constraintTop_toBottomOf="@+id/cuatrobutton" />
 
         <Button
             android:id="@+id/sumabutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="206dp"
-            android:layout_marginBottom="4dp"
             android:backgroundTint="@color/amarilloboton"
             android:text="+"
             android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/divbutton"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/divbutton" />
+            app:layout_constraintStart_toStartOf="@+id/divbutton"
+            app:layout_constraintTop_toBottomOf="@+id/restabutton" />
 
         <Button
             android:id="@+id/dosbutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
             android:layout_marginTop="4dp"
             android:backgroundTint="@color/verdebuton"
@@ -287,16 +317,42 @@
 
         <Button
             android:id="@+id/sietebutton"
-            android:layout_width="97dp"
+            android:layout_width="0dp"
             android:layout_height="101dp"
-            android:layout_marginLeft="4dp"
+
             android:layout_marginTop="4dp"
             android:backgroundTint="@color/verdebuton"
             android:text="7"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cbutton"
+            app:layout_constraintStart_toStartOf="@+id/cbutton"
             app:layout_constraintTop_toBottomOf="@+id/cbutton" />
 
+        <androidx.constraintlayout.widget.Guideline
+
+            android:id="@+id/guidelineVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline
+
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

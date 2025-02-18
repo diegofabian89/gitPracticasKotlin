@@ -5,10 +5,12 @@
     <color name="purpura">#7BE28CFB</color>
     <color name="colorFondo">#01072C</color>
     <color name="colorTextview">#211C32</color>
-    <color name="amarilloboton">#A2B304</color>
+    <color name="amarilloboton">#E6A2B304</color>
     <color name="verdebuton">#393852</color>
     <color name="calculadorcolor">#100500</color>
-    <color name="botonigual">#922E01</color>
+    <color name="botonigual">#87C34106</color>
     <color name="titulocolor">#04DAF6</color>
     <color name="fondodesactivo">#2E2239FF</color>
+    <color name="botonigualHori">#76DA9DE4</color>
+    <color name="botonoperandosland">#50485AE4</color>
 </resources>
